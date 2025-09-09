@@ -1,8 +1,10 @@
 #Tkinter Python ka built-in library hai jo GUI (Graphical User Interface) banane ke liye use hota hai.
+# importing libraries
 import tkinter as Tk
 
-# create main application window
+# creating main application window
 root = Tk.Tk()
+
 # make label
 a = Tk.Label(text="Hello, Tkinter!")
 # display label using pack (is se label ko display krte hain)
@@ -14,5 +16,5 @@ b.pack()
 c = Tk.Label(text="I am Pawanpreet")
 c.pack()
 
-
+# running the window
 root.mainloop()
