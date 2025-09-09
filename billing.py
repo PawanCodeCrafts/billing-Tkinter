@@ -25,15 +25,19 @@ root.title("Billing system")
 # # display label using pack (is se label ko display krte hain)
 # a.pack()
 
-d = tk.Label(text="raman")
-d.grid(column=1, row=1)
+################# GRID #######################
+# d = tk.Label(text="raman")
+# d.grid(column=1, row=1)
+# b = tk.Label(text="raman")
+# b.grid(column=1, row=2)
 
-b = tk.Label(text="raman")
-b.grid(column=1, row=2)
+####################### place ######################
 
+a = tk.Label(text="billing system", font=("Arial", 24), fg="blue" , bg="yellow")
+a.place(x=100, y=10)
 
-
-
+b= tk.Label(text="product")
+b.place(x=100, y=50)
 
 
 
