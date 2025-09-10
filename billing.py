@@ -4,6 +4,7 @@ import tkinter as tk
 
 def sayHello():
     data = b.get()
+    # clear the entry box after getting data
     b.delete(0,tk.END)
     print(data)
 
