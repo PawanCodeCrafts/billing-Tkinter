@@ -3,27 +3,30 @@
 import tkinter as tk
 
 def sayHello():
-    print("Hello World")
+    data = b.get()
+    b.delete(0,tk.END)
+    print(data)
 
 # creating main application window
 root = tk.Tk()
 
 
 
-# buttons
-a = tk.Button(text="click me",command=sayHello)
-a.grid(column=1,row=1)
+# buttons --- root matlab window ka naam ki kis window me rakha hai
+a = tk.Button(root, text="click me",command=sayHello)
+a.grid(column=1,row=3)
 
-c =tk.Label(text="enter data")
+c =tk.Label(root, text="enter data")
 c.grid(column=1,row=2)
 
-b = tk.Entry()
+b = tk.Entry(root,)
 b.grid(column=2,row=2)
+
+
 
 
 #resizing window (in pixels)
 root.geometry("300x300")
-
 #changing title 
 root.title("Billing system")
 # no resizing
