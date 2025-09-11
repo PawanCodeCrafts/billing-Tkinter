@@ -32,6 +32,11 @@ def getBill():
 
 
 
+
+
+
+
+
 # creating a window 
 root = tk.Tk()
 
